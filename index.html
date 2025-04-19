@@ -15,8 +15,16 @@
       <!-- My Logo -->
        <div class="logo-content">
         <div class="menu-div">
-          <img class="menu-icon" src="./assets/Icons & Logos/burgermenu (2).svg" alt="">
+          <a onclick=showSidebar() href="#"><img class="menu-icon" src="./assets/Icons & Logos/burgermenu (2).svg" alt=""></a>
+          
         </div>
+        <ul class="sidebar">
+          <li><a onclick=hideSidebar() class="link"><img class="close-icon" src="./assets/Icons & Logos/close-menu.svg" alt="#"></a</li>
+          <li class="nav-link"><a class="link active-link" href="#home">HOME</a></li>
+          <li class="nav-link"><a class="link" href="#home">PRODUCTS</a></li>
+          <li class="nav-link"><a class="link" href="#home">ABOUT</a></li>
+          <li class="nav-link"><a class="link" href="#home">CONTACT</a></li>
+        </ul>
         <div class="logo-div">
           <img class="logo" src="./assets/Icons & Logos/saine-clothing-logo-01.svg" alt="">
         </div>
@@ -39,5 +47,19 @@
       </ul>
     </nav>
   </main>
+
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+      
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+
+   
+  </script>
 </body>
 </html>
