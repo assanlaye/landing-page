@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StyleFlex Clothing</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Saine Clothing</title>
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <div class="logo"><img src="./assets/Icons & Logos/saine-clothing-logo-01.svg" alt=""></div>
-      <nav id="navbar">
-        <ul class="nav-links">
-          <li><a class="link" href="#home">Home</a></li>
-          <li><a class="link" href="#shop">Shop</a></li>
-          <li><a class="link" href="#about">About</a></li>
-          <li><a class="link" href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger">&#9776;</div>
-      </nav>
-    </div>
+  <header class="header">
+    <nav class="navbar">
+      <!-- My Logo -->
+       <div class="logo-content">
+        <div class="logo-div">
+          <img class="logo" src="./assets/Icons & Logos/saine-clothing-logo-01.svg" alt="">
+        </div>
+        <div class="cart-icon">
+          <a href="">
+            <img class="menu-icon" src="./assets/Icons & Logos/shop.svg" alt="">
+          </a>
+          <a href="">
+            <img class="menu-icon" src="./assets/Icons & Logos/user.svg" alt="">
+          </a>
+        </div>
+       </div>
+      <!-- Navbar -->
+      <ul class="navbar-links">
+        <li class="nav-link"><a class="link active-link" href="#home">HOME</a></li>
+        <li class="nav-link"><a class="link" href="#home">SHOP</a></li>
+        <li class="nav-link"><a class="link" href="#home">ABOUT</a></li>
+        <li class="nav-link"><a class="link" href="#home">CONTACT</a></li>
+      </ul>
+      <!-- Burger Menu -->
+    <!-- <div class="burgermenu">
+      <img class="menu-icon" src="./assets/Icons & Logos/menu-icon.svg" alt="">
+    </div> -->
+    </nav>
+    
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1 class="main-title">Wear Your Confidences</h1>
-      <p class="subtext">Redefining streetwear with clean lines, bold energy, and a minimalist edge. <br /> Built for the dreamers and the everyday creatives.</p>
-      <a href="#shop" class="btn">Shop Now</a>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <p>"StyleFlex clothes are so comfortable and stylish!"</p>
-        <strong>- Sarah J.</strong>
+  <main>
+    <section class="hero">
+      <h1 class="main-text">Wear Your Confidents</h1>
+      <p class="subtext">Redefining streetwear with clean lines, bold energy, and a minimalist edge.</p>
+      <div>
+        <a class="btn" href="">Shop Now &#8594;</a>
       </div>
-      <div class="testimonial-card">
-        <p>"Their customer service is top-notch. Highly recommend!"</p>
-        <strong>- David M.</strong>
+     
+    </section>
+    <section id="products" class="product-section">
+      <h2 class="section-title">Our Collection</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img class="product-img" src="./assets/product-img/newproduct2.webp" alt="T-Shirt">
+          <h3 class="product-name">Classic T-Shirt</h3>
+          <p class="price">$25.00</p>
+        </div>
+        <div class="product-card">
+          <img class="product-img" src="./assets/product-img/hoodie.jpg" alt="Hoodie">
+          <h3 class="product-name">Cozy Hoodie</h3>
+          <p class="price">$45.00</p>
+        </div>
+        <div class="product-card">
+          <img class="product-img" src="./assets/product-img/jeans.jpeg" alt="Jeans">
+          <h3 class="product-name">Denim Jeans</h3>
+          <p class="price">$55.00</p>
+        </div>
+        <div class="product-card">
+          <img class="product-img" src="./assets/product-img/newproduct3.jpg" alt="Jacket">
+          <h3 class="product-name">Stylish Jacket</h3>
+          <p class="price">$70.00</p>
+        </div>
       </div>
-      <div class="testimonial-card">
-        <p>"I love that they care about sustainability. Great job!"</p>
-        <strong>- Laila B.</strong>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="signup">
-    <h2>Stay in the Loop</h2>
-    <p>Subscribe to our newsletter and never miss a drop!</p>
-    <form>
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Join</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Saine Clothing. All rights reserved.</p>
-  </footer>
-
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  </script>
+    </section>
+    
+  </main>
 </body>
 </html>
