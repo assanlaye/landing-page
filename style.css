@@ -72,7 +72,7 @@ body {
   color: #fff;
 
 }
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 48rem) {
   .navbar-links {
     display: none;
   }
@@ -148,13 +148,233 @@ body {
 
 
 }
-
-.featured-section {
+/* Products Section */
+.product-section {
+  background-color: #fff;
   text-align: center;
-  padding: 0 2rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  }
+  .btn-add-to-cart {
+    display: inline-block;
+    background-color: #af6d33;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .btn-add-to-cart:hover {
+    background-color: #f1f1f1;
+    color: #af6d33;
+
+  }
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    max-width: 75rem;
+    row-gap: 3rem;
+
+  }
+  .product-title{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #222222;
+
+  }
+  .product-price {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  .product-card {
+    background: white;
+    width: 18rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #f1f1f1;
+  }
+  .product-image {
+    width: 100%;
+    height: 18.75rem;
+    object-fit: cover;
+  }
+  .see-more-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 5rem;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .see-more-btn:hover {
+    background-color: #af6d33;
+    color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #edecec;
+  }
+
+/* About Section */
+.about-section {
+  padding: 3.75rem 1.25rem;
+  background-color: #f8f8f8;
 }
-.section-title {
-  height: 100vh;
-  margin-top: 2.4rem;
-  font-size: 1.5rem;
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.about-text-box {
+  flex: 1;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.about-paragraph {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 0.9375rem;
+}
+
+.about-image-box {
+  flex: 1;
+  max-width: 31.25rem;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (min-width: 48rem) {
+  .about-container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .about-text-box {
+    padding-right: 2.5rem;
+  }
+}
+
+/* Features */
+.features {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+}
+
+.features-img{
+  width: 3.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 3rem 1rem;
+  background: #f1f1f1;
+  text-align: center;
+}
+.profile {
+  width: 6.25rem;
+  height: 6.25rem;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sign-Up */
+.signup {
+  padding: 3rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.signup-form {
+  margin-top: 1rem;
+}
+
+.signup input[type="email"] {
+  padding: 0.7rem;
+  width: 15.625rem;
+  max-width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  padding: 0.7rem 1.2rem;
+  margin-left: 0.5rem;
+  background-color: #f76b1c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup button:hover {
+  background-color: #e65a00;
+}
+
+/* Footer */
+.footer {
+  font-size: 1rem;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.author {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+.author-name {
+  color: #f76b1c;
+  text-decoration: none;
 }
