@@ -107,3 +107,54 @@ body {
  .close-icon {
   width: 1.2rem;
  }
+
+ /* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./assets/banner.png);
+  background-size: cover;
+  background-position: center;
+  color: #fff;    
+  text-align: center;
+  padding: 0 2rem;
+
+}
+.main-text {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.sub-text {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  transition: all 0.18s ease-in-out;
+  box-shadow: 0.4rem 0.4rem 0 #edecec;
+}
+
+.btn:hover {
+  background-color: #af6d33;
+  color: #fff;
+
+
+}
+
+.featured-section {
+  text-align: center;
+  padding: 0 2rem;
+}
+.section-title {
+  height: 100vh;
+  margin-top: 2.4rem;
+  font-size: 1.5rem;
+}
